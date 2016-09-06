@@ -9,7 +9,7 @@ function factorial($num)
 		return ($num * factorial($num-1));
 	}
 }
-echo "Yes";
+
 echo factorial(6);
 
 ?>
