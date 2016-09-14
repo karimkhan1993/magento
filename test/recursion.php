@@ -9,7 +9,7 @@ function factorial($num)
 		return ($num * factorial($num-1));
 	}
 }
-echo "Only for testing purpose";
+echo "This is Banvari Lal";
 echo factorial(6);
 
 ?>
