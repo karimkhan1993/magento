@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+	
+            <boxshipping>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>HkModule\BoxShipping\Model\Carrier\Boxshipping</model>
+                <name>Box</name>
+                <price>00.00</price>
+                <box_a_category>Formula</box_a_category>
+                <box_b_category>Wool</box_b_category>
+                <box_c_category>Nutrition,Cosmetics</box_c_category>
+                <box_a_price>4.00</box_a_price>
+                <box_b_price>9.50</box_b_price>
+                <box_c_price>6.50</box_c_price>
+                <box_a_weight>0.1</box_a_weight>
+                <box_b_weight>0.1</box_b_weight>
+                <box_c_weight>0.1</box_c_weight>
+                <box_a_max_items>3</box_a_max_items>
+                <box_b_max_items>1</box_b_max_items>
+                <box_c_max_items>8</box_c_max_items>
+                <same_nutrition_items_c>5</same_nutrition_items_c>
+                <max_price_value_box_c>200</max_price_value_box_c>
+                <max_weight_box_c>4</max_weight_box_c>
+                <title>Box Shipping</title>
+                <type>I</type>
+                <sort_order>0</sort_order>
+                <specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+            </boxshipping>
+			
+        </carriers>
+    </default>
+</config>

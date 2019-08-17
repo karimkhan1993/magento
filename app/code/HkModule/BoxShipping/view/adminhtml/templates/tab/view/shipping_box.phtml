@@ -1,0 +1,33 @@
+<?php
+/**
+ * @var $block \HkModule\BoxShipping\Block\Adminhtml\OrderEdit\Tab\View
+ */
+?>
+
+<div class="fieldset-wrapper order-information">
+    <div class="fieldset-wrapper-title">
+        <span class="title"><?php /* @escapeNotVerified */
+            echo __('Shipping Box Information') ?></span>
+    </div>
+    <table class="admin__table-secondary">
+        <tbody>
+        <?php echo $block->getChildHtml(); ?>        
+        <tr>
+            <th><?php /* @escapeNotVerified */
+                echo __('Order ID:') ?></th>
+            <td><?php echo $block->getOrderIncrementId(); ?></td>
+        </tr>
+        <?php foreach ($block->getBoxDetail() as $box => $value) { ?>
+        <?php if (!empty($value)) {
+        	foreach ($value as $index => $boxes) { 
+        		foreach ($boxes as $key => $item) {  ?>     
+        		<tr><th><?php echo $box.' '.($index + 1); ?></th><td>
+        			<span>Name: <?php echo $item->name; ?></span><br>
+        			<span>Weight: <?php echo $item->weight; ?> KG(S)</span><br>
+        			<span>Qty: <?php echo $item->qty; ?></span>
+        		</td></tr>   	
+     	<?php } }  } ?>
+       	<?php } ?>
+        </tbody>
+    </table>
+</div>
